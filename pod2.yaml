@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: glpi
+  name: glpi
+spec:
+  containers:
+  - image: glpi_glpi
+    name: glpi
+    imagePullPolicy: Never
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
